@@ -13,25 +13,30 @@
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;500&display=swap');
   </style>
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="./slotmachine.css" type="text/css" media="screen" />
+
 </head>
 
 <body>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg bg-black " data-bs-theme="dark">
+  <div id="CINES"></div>
+  <nav class="navbar navbar-expand-lg bg-black "  data-bs-theme="dark">
     <div class="container-fluid">
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse p-3 mb-2 bg-black text-white" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse p-3 mb-2 bg-black text-white barr" id="navbarSupportedContent" >
+        
+        <div> <IMg src="IMAX-logo.png" style="width: 100px; margin: 0%;"></IMg></div>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="home.html">HOME</a>
+            <a class="nav-link active text-white" aria-current="page" href="index.html">HOME</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="cines.html">CINES</a>
+            <a class="nav-link active text-white" id="activo" aria-current="page" href="cines.html">CINES</a>
           </li>
 
           <li class="nav-item">
@@ -47,13 +52,10 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="quever.html">LOG IN</a>
+            <a class="nav-link active text-white" aria-current="page" href="login.html">LOG IN</a>
           </li>
         </ul>
-        <div class="search-container">
-          <input type="text" placeholder="Buscar...">
-          <button type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></i></button>
-        </div>
+
       </div>
     </div>
   </nav>
@@ -129,6 +131,110 @@
 
 
 
+
+
+
+    <div class="header-line"></div>
+
+
+
+    <!-- Intro -->
+    <header>
+      <p>Shuffle your elements, randomize your results or make an slide...<br/>
+      <a href="https://github.com/josex2r/jQuery-SlotMachine">jQuery-SlotMachine</a> is not a simple animation plugin.</p>
+    </header>
+
+
+    <!-- Flight example -->
+    <div id="plane">
+      <div class="container">
+        <div class="flex">
+          <div class="well content">
+           
+
+            <div id="planeMachine">
+              <div class="text-center">
+              </div>
+              <div class="text-center">
+              </div>
+              <div class="text-center">
+              </div>
+              <div class="text-center">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- randomize -->
+    <div id="randomize">
+      <div class="container">
+        <h1>NO SABES QUE VER?</h1>
+        <p>NOSOTROS TE AYUDAMOS</p>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="randomize__item">
+              <div id="machine0" class="randomizeMachine">
+                <div><img src="./img/slot1.png" /></div>
+                <div><img src="./img/slot2.png" /></div>
+                <div><img src="./img/slot3.png" /></div>
+                <div><img src="./img/slot4.png" /></div>
+                <div><img src="./img/slot5.png" /></div>
+                <div><img src="./img/slot6.png" /></div>
+              </div>
+            </div>
+            <div id="machine0Result" class="col-xs-4 machineResult">HORA</div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="randomize__item">
+              <div id="machine1" class="randomizeMachine">
+                <div><img src="./img/slot1.png" /></div>
+                <div><img src="./img/slot2.png" /></div>
+                <div><img src="./img/slot3.png" /></div>
+                <div><img src="./img/slot4.png" /></div>
+                <div><img src="./img/slot5.png" /></div>
+                <div><img src="./img/slot6.png" /></div>
+              </div>
+            </div>
+            <div id="machine1Result" class="col-xs-4 machineResult">CINE</div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="randomize__item">
+              <div id="machine2" class="randomizeMachine">
+                <div><img src="./img/slot1.png" /></div>
+                <div><img src="./img/slot2.png" /></div>
+                <div><img src="./img/slot3.png" /></div>
+                <div><img src="./img/slot4.png" /></div>
+                <div><img src="./img/slot5.png" /></div>
+                <div><img src="./img/slot6.png" /></div>
+              </div>
+            </div>
+            <div id="machine2Result" class="col-xs-4 machineResult">PELÍCULA</div>
+          </div>
+        </div>
+
+        <div class="flex">
+          <div class="btn-group btn-group-justified" role="group">
+            <button  id="randomizeButton" type="button" class="botomm btn btn-primary">¡TIRA!</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
     <!-- ESPACIO -->
     <section class="ESPACIO">
       <img src="black.jpg" alt="">
@@ -136,6 +242,7 @@
 
 
 
+    <div> <a href="#CINES" type="button" class=" BOTONARRIBA"><i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i></a></button></div>
 
     <!-- FOOTER  -->
 
@@ -176,6 +283,9 @@
 
     </footer>
     <script src="nose.js"></script>
+
+    <link rel="stylesheet" href="dist/slotmachine.css" />
+<script src="dist/slotmachine.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

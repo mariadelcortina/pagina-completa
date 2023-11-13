@@ -33,7 +33,7 @@ body {
 
 .nav-item:hover {
     color: #000000;
-    background-color: #0099cc;
+    background-color: #0099ccc5;
 }
 
 .navbar {
@@ -47,6 +47,15 @@ body {
 
 .navbar .logo {
     font-size: 20px;
+}
+
+.barr{
+
+}
+
+#activo{
+    color: #000000;
+    background-color: #0099cc;
 }
 
 /* Campo de búsqueda */
@@ -110,6 +119,11 @@ body {
     background-color: transparent;
     width: 100%;
     height: 100vh;
+}
+.ESPACIO2 {
+    background: url("black.jpg");
+    width: 10%;
+    height: 30px;
 }
 
 .wrapperR {
@@ -318,6 +332,193 @@ footer {
 
 /* CARTELERA */
 
+.containerpeli{
+    background-color: #000000;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+  }
+  .col a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+  }
+
+
+
+  
+.CARTELERITA{
+    background-color: #000;
+}
+
+
+
+
+
+
+
+
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+.pelicula-principal {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/backdrop.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.pelicula-principal .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principal .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principal .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principal .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-principal .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pelicula-principal .boton i {
+	margin-right: 1.25em;
+}
+
+.contenedor-titulo-controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.contenedor-titulo-controles h3 {
+	color: #fff;
+	font-size: 30px;
+}
+
+.contenedor-titulo-controles .indicadores button {
+	background: #fff;
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo {
+	background: red;
+}
+
+
+/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
+.peliculas-recomendadas {
+	margin-bottom: 70px;
+}
+
+.peliculas-recomendadas .contenedor-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha:hover {
+	background: rgba(0,0,0, .9);
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda {
+	left: 0;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+	right: 0;
+}
+
+/* ---- ----- ----- Carousel ----- ----- ----- */
+.peliculas-recomendadas .contenedor-carousel {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
+	width: 100%;
+	vertical-align: top;
+}
+
+
+
+
+
+
+
 
 
 /* CINES */
@@ -338,6 +539,93 @@ footer {
 .mapita{border-radius: 40px;}
 
 
+/* jackpot */
+
+  
+  /*
+   * SlotMachine
+   */
+  #randomize {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  #randomize .randomize__item {
+    padding: 40px;
+    width: 180px;
+    height: 180px;
+    background: white;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+  }
+  
+  #randomize .row > div.col-xs-4 > div {
+    padding-top: 40px;
+    padding-left: 40px;
+    width: 175px;
+    height: 175px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: auto;
+  }
+  
+  .randomizeMachine {
+    width: 100px;
+    height: 100px;
+  }
+  
+  #randomize .btn-group {
+    margin-top: 30px;
+    width: auto;
+    margin-bottom: 15px;
+  }
+  
+  .machineResult {
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+    height: 50px !important;
+    background: transparent !important;
+    font-size: 18px;
+    padding: 10px !important;
+  }
+  
+  
+  .github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+  @keyframes octocat-wave {
+    0%,
+    100% {
+      transform: rotate(0);
+    }
+    20%,
+    60% {
+      transform: rotate(-25deg);
+    }
+    40%,
+    80% {
+      transform: rotate(10deg);
+    }
+  }
+  @media (max-width: 500px) {
+    .github-corner:hover .octo-arm {
+      animation: none;
+    }
+    .github-corner .octo-arm {
+      animation: octocat-wave 560ms ease-in-out;
+    }
+  }
+  
+
+
+  .botomm{
+
+  }
 
 /* VIDEO CINES FONDO */
 .video-container {
@@ -425,7 +713,16 @@ MAPA */
 
 
 
-
+.acomodarexitoso{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(kid.webm);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
 
 
 
@@ -441,8 +738,15 @@ MAPA */
     z-index: -1;
 }
 
+.exitosot{
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+}
+
 .recuadro {
     background-color: transparent;
+    background-color: #0099cc25 ;
     border: 2px solid rgba(255, 255, 255, .2);
     color: #ffffff;
     border-radius: 10px;
@@ -461,13 +765,10 @@ MAPA */
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 10px;
     padding: 90px 70px;
-    height: 509px;
-    width: 392px;
     z-index: 1;
     display: flex;
     position: absolute;
-    margin-top: 8%;
-    margin-left: 37%;
+
 
 
 
@@ -566,3 +867,17 @@ MAPA */
 .register-link p a:hover {
     text-decoration: underline;
 }
+
+
+
+
+
+
+/* TIENDA  */
+
+.IMGT:hover{
+
+}
+
+
+
